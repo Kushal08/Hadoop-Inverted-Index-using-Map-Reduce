@@ -1,0 +1,12 @@
+apply plugin: "java"
+apply plugin: "eclipse"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+  testCompile "junit:junit:4.10"
+  compile fileTree(dir: '/home/kushal/hadoop-2.7.2/share/hadoop/common', include: '*.jar')
+  compile fileTree(dir: '/home/kushal/hadoop-2.7.2/share/hadoop/mapreduce', include: '*.jar')
+}
